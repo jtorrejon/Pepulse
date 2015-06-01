@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:paddingTop="10dp"
+    android:longClickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/advice"
+        android:id="@+id/textView3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_marginRight="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="Insert your full name..."
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:id="@+id/text_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:background="#FFF"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Insert your blood group..."
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:id="@+id/text_blood_group"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:background="#FFF"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:hint="Insert a phone number..."
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:id="@+id/text_phone"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:background="#FFF"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Information"
+        android:id="@+id/add_button"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:theme="@style/Theme.Pepulsetheme"
+        android:background="#00a8ff"
+        android:textStyle="bold"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agendaButton"
+        android:src="@drawable/address7"
+        android:layout_below="@+id/text_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activate SMS"
+        android:id="@+id/checkboxSMS"
+        android:layout_above="@+id/add_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:enabled="true"
+        android:checked="true"
+        android:clickable="true" />
+
+</RelativeLayout>
